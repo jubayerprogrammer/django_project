@@ -1,0 +1,35 @@
+{% extends "core/base.html" %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+    
+    <div class="card shadow-lg hover-card" style="width: 24rem; border-radius: 15px; transition: 0.3s; cursor: pointer;">
+        
+        <div class="card-body text-center">
+            
+            <h3 class="card-title mb-3">Contact page</h3>
+            
+            <p class="card-text">
+                Hover or click this card to see effect.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+    .hover-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .hover-card:active {
+        transform: scale(0.97);
+    }
+</style>
+
+{% endblock content %}
