@@ -65,7 +65,6 @@ class profileForm(forms.ModelForm):
             "city" : forms.TextInput(attrs={"class":"form-control","placeholder":"City"}),
             "pin" : forms.NumberInput(attrs={"class":"form-control","placeholder" : "Enter 7 digit pin"}),
             "division": forms.Select(attrs={"class": "form-select"}),
-            # mobile এবং email এ 'form-control' ব্যবহার করা ভালো (form-select ড্রপডাউনের জন্য)
             "mobile" : forms.TextInput(attrs={"class" : "form-control","placeholder": "Enter 11 digit mobile number"}),
             "email" : forms.EmailInput(attrs={"class":"form-control","placeholder" : "Enter your email address"}),
         }
